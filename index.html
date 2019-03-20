@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Content!</title>
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Added link to the jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+
+    
+   <div id="array-interest"></div>
+
+
+    <script>
+     var interest='';
+     var topics = ['vacations','restaurants','music','fruits','running','asics',
+                   'reeboks','shoes','dogs','cats','birds'
+                ];
+     for(var i=0;i<topics.length;i++){
+       interest=topics[i];                             //loop thru questions display questions
+       console.log(interest);
+
+    var button=$("<button>");  
+    button.html(interest);
+    $("#array-interest").append(button);
+    } 
+    
+    
+    </script>
+    
+</body>
+</html>
